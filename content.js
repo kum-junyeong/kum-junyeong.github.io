@@ -94,7 +94,7 @@ const content = {
         "one camera and one microphone, and compared it with a baseline and a human-controlled condition " +
         "in a user study with 30 participants.",
       team: "Sunghun Jung (PNU), Junyeong Kum (PNU), Myungho Lee (PNU)",
-      image: "",
+      image: "images/publications/eyegaze.png",
       tags: ["Eye Gaze", "Speaker Detection", "Mona Lisa Effect", "Multi-party"],
       publications: ["electronics24", "electronics25"],
     },
@@ -107,7 +107,7 @@ const content = {
         "We introduce the Hybrid Avatar-Agent System (HAAS), designed to implement virtual agents " +
         "that can address diverse questions.",
       team: "Junyeong Kum (PNU), Myungho Lee (PNU)",
-      image: "",
+      image: "images/publications/haas.png",
       tags: ["Hybrid System", "Avatar", "Agent", "LLM"],
       publications: ["kms23", "kcgs22-haas"],
     },
@@ -120,7 +120,7 @@ const content = {
         "We examine whether gestural fillers that match the conversation type reduce user-perceived latency, " +
         "and compare gestural fillers with conversational fillers.",
       team: "Junyeong Kum (PNU), Myungho Lee (PNU)",
-      image: "",
+      image: "images/publications/gesturalfiller.png",
       tags: ["Digital Humans", "Latency", "Gestural Filler", "Conversation"],
       publications: ["applsci22", "vrst22", "kcgs22-filler"],
     },
