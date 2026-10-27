@@ -23,7 +23,7 @@ const content = {
       "I study how embodied conversational agents enter, move through, and take part in social situations " +
       "with people in AR, VR, and mixed reality.",
     interests: ["Extended Reality (XR)", "Virtual Humans", "Human–Computer Interaction", "Embodied Conversational Agents", "Social Presence"],
-    email: "gold.junyeong@gmail.com",
+    email: "gold.junyeong@gmail.com", // 클릭하면 클립보드에 복사됩니다
     links: [
       { label: "Google Scholar", url: "https://scholar.google.com/citations?user=YOJ2AaoAAAAJ&hl=ko&oi=ao" },
       { label: "LinkedIn", url: "https://www.linkedin.com/in/junyeong-kum-a05889358/" },

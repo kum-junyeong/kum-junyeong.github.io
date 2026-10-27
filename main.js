@@ -73,7 +73,7 @@
           </div>
           <div><b>Explore</b>${explore}</div>
           <div><b>Connect</b>${connect}</div>
-          <div class="footer-contact"><b>Contact</b><a href="mailto:${esc(p.email)}">${esc(p.email)}</a></div>
+          <div class="footer-contact"><b>Contact</b><a href="mailto:${esc(p.email)}" data-copy="${esc(p.email)}">${esc(p.email)}</a></div>
         </div>
         <div class="wrap footer-bottom">
           <span>© ${new Date().getFullYear()} ${esc(p.name)}</span>
@@ -158,7 +158,7 @@
       }</div>`;
       const buttons = `
         <div class="hero-links">
-          <a class="btn primary" href="mailto:${esc(p.email)}">Email</a>
+          <a class="btn primary" href="mailto:${esc(p.email)}" data-copy="${esc(p.email)}">Email</a>
           ${p.links.map((l) => `<a class="btn" ${ext(l.url)}>${esc(l.label)}</a>`).join("")}
           <a class="btn" href="cv.html">CV</a>
         </div>`;
@@ -299,6 +299,27 @@
   toggle.addEventListener("click", () => {
     const open = links.classList.toggle("open");
     toggle.setAttribute("aria-expanded", open);
+  });
+
+  // 이메일 클릭 시 주소를 클립보드에 복사
+  document.querySelectorAll("[data-copy]").forEach((el) => {
+    el.addEventListener("click", async (e) => {
+      e.preventDefault();
+      const text = el.dataset.copy;
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        const ta = Object.assign(document.createElement("textarea"), { value: text });
+        document.body.append(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      el.dataset.label ??= el.textContent;
+      el.textContent = "Copied!";
+      clearTimeout(el._t);
+      el._t = setTimeout(() => (el.textContent = el.dataset.label), 1500);
+    });
   });
 
   // projects.html#project-3 처럼 들어온 경우 해당 위치로 이동
