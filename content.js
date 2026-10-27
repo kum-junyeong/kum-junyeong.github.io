@@ -54,7 +54,7 @@ const content = {
         "We conducted a user study manipulating agent locomotion (walking vs. teleporting), " +
         "outfit (casual vs. hero), and body completeness (full-body vs. upper-body).",
       team: "Junyeong Kum (PNU), Omar Khan (UofC), Hyeongil Nam (UofC), Kangsoo Kim (UofC), Myungho Lee (PNU)",
-      image: "", // 예: "images/projects/agent-locomotion.png"
+          image: "images/publications/agentlocomotion.png", // 예: "images/projects/agent-locomotion.png"
       tags: ["Virtual Agents", "Locomotion", "Appearance", "Mixed Reality"],
       publications: [],
     },
@@ -67,7 +67,7 @@ const content = {
         "We examine participants' entry behavior as they join a circular F-formation composed of " +
         "three distinct entities: an agent, an avatar, and a real human.",
       team: "Junyeong Kum (PNU), Sunghun Jung (PNU), Hyeongil Nam (UofC), Kangsoo Kim (UofC), Myungho Lee (PNU)",
-      image: "",
+        image: "images/publications/formation.png",
       tags: ["F-formation", "Proxemics", "Mixed Reality", "Social Interaction"],
       publications: ["vrst25"],
     },
@@ -80,7 +80,7 @@ const content = {
         "We examine how plausible it is for embodied conversational agents to enter the user's field of view in AR, " +
         "and how their entrance styles affect user experience, perceived social presence, and agent co-presence.",
       team: "Junyeong Kum (PNU), Seungwon Kim (CNU), Myungho Lee (PNU)",
-      image: "",
+        image: "images/publications/agententrance.png",
       tags: ["Embodied Conversational Agents", "Augmented Reality", "Social Presence", "Co-presence"],
       publications: ["tvcg25", "ieeevr25"],
     },
