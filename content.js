@@ -385,7 +385,9 @@ const content = {
       {
         title: "Education",
         items: [
-          { when: "Present", what: "Ph.D. Student", where: "Pusan National University" },
+          { when: "2023.09 – Present", what: "Ph.D. in Information Convergence Engineering (Major in Artificial Intelligence)", where: "Pusan National University · Full scholarship" },
+          { when: "2021.03 – 2023.02", what: "M.S. in Information Convergence Engineering (Major in Artificial Intelligence)", where: "Pusan National University · Full scholarship" },
+          { when: "2016.03 – 2021.02", what: "B.S. in Mechanical Engineering", where: "Pusan National University" },
         ],
       },
       {
@@ -397,7 +399,9 @@ const content = {
       {
         title: "Honors & Awards",
         items: [
+          { when: "2025", what: "BK21 International Conference Presentation Travel Grant (ACM VRST 2025)", where: "Pusan National University" },
           { when: "2025", what: "Honorable Mention, Best Poster", where: "IEEE VR 2025" },
+          { when: "2024", what: "Mitacs Globalink Research Award", where: "Mitacs, Canada · University of Calgary (Host: Dr. Kangsoo Kim)" },
           { when: "2022", what: "Best Poster Award", where: "ACM VRST 2022" },
         ],
       },
