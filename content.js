@@ -46,8 +46,22 @@ const content = {
 
   projects: [
     {
+      title: "Pedestrian Visualization",
+      period: "2025.12 – 2026.03",
+      theme: "TVCG 2026 · Situational awareness",
+      question: "How should real-world pedestrians appear to someone immersed in VR?",
+      description:
+        "We conducted a user study manipulating pedestrian intent (Passerby, Bystander, Interactor), " +
+        "visualization shape (humanoid vs. capsule) and transparency (opaque vs. translucent), and task distance, " +
+        "and propose intent-dependent visualization strategies that balance situational awareness and task distraction.",
+      team: "Junyeong Kum (PNU), Bogyeong Seo (CNU), Seungwon Kim (CNU), Myungho Lee (PNU)",
+      image: "images/publications/pedestrianvisualization.png",
+      tags: ["Virtual Reality", "VR–Non-VR Interaction", "Awareness", "Interruptions"],
+      publications: ["tvcg26", "ismar26"],
+    },
+    {
       title: "Agent Locomotion",
-      period: "2025.05 –",
+      period: "2025.05 – 2025.08",
       theme: "Under review · IEEE VR 2027",
       question: "Should a virtual agent walk to you, or simply appear?",
       description:
@@ -136,6 +150,15 @@ const content = {
   publications: [
     // Journal Articles
     {
+      id: "tvcg26", type: "journal", year: 2026, selected: true,
+      authors: "J. Kum, B. Seo, S. Kim, and M. Lee",
+      title: "Not All Pedestrians Are the Same: Effects of Real-World Pedestrian Visualization on Intent Recognition and Task Distraction",
+      venue: "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+      short: "TVCG 2026",
+      link: "", // DOI 나오면 추가
+      image: "",
+    },
+    {
       id: "tvcg25", type: "journal", year: 2025, selected: true,
       authors: "J. Kum, S. Kim, and M. Lee",
       title: "Entering Your Space: How Agent Entrance Styles Shape Social Presence in AR",
@@ -173,6 +196,15 @@ const content = {
     },
 
     // Conference Proceedings
+    {
+      id: "ismar26", type: "conference", year: 2026,
+      authors: "J. Kum, B. Seo, S. Kim, and M. Lee",
+      title: "Not All Pedestrians Are the Same: Effects of Real-World Pedestrian Visualization on Intent Recognition and Task Distraction",
+      venue: "IEEE International Symposium on Mixed and Augmented Reality (ISMAR)",
+      short: "ISMAR 2026",
+      link: "", // DOI 나오면 추가
+      image: "",
+    },
     {
       id: "vrst25", type: "conference", year: 2025, selected: true,
       authors: "J. Kum, S. Jung, H. Nam, K. Kim, and M. Lee",
@@ -263,6 +295,13 @@ const content = {
   /*  - category: Conference | Research | Workshop | Service 등 자유롭게  */
   /* ------------------------------------------------------------------ */
   activities: [
+    {
+      title: "ISMAR 2026",
+      date: "2026.10.05 – 2026.10.09",
+      location: "Bari",
+      category: "Conference",
+      details: ["Presented a TVCG paper."],
+    },
     {
       title: "Lab Workshop",
       date: "2026.01.28 – 2026.01.29",
