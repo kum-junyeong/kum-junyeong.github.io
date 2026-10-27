@@ -47,8 +47,8 @@ const content = {
   projects: [
     {
       title: "Agent Locomotion",
-      period: "2025.05 – Present",
-      theme: "Ongoing · Virtual agents & locomotion",
+      period: "2025.05 –",
+      theme: "Under review · IEEE VR 2027",
       question: "Should a virtual agent walk to you, or simply appear?",
       description:
         "We conducted a user study manipulating agent locomotion (walking vs. teleporting), " +
