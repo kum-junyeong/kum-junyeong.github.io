@@ -284,50 +284,60 @@ const content = {
   /* ------------------------------------------------------------------ */
   /* Activities  (위에 있을수록 최신)                                      */
   /*  - category: Conference | Research | Workshop | Service 등 자유롭게  */
+  /*  - photos: 사진을 images/activities/ 폴더에 넣고 경로를 적으세요.    */
+  /*    예: photos: ["images/activities/ismar26-1.jpg", "..."]           */
+  /*    (Activities 페이지에만 표시되고, 누르면 원본이 새 탭에 열립니다)  */
   /* ------------------------------------------------------------------ */
   activities: [
     {
       title: "ISMAR 2026",
       date: "2026.10.05 – 2026.10.09",
-      location: "Bari",
+      location: "Bari, Italy",
       category: "Conference",
       details: ["Presented a TVCG paper."],
+      photos: ["images/activities/ismar2026_2.jpg", "images/activities/ismar2026_3.jpg",
+              "images/activities/ismar2026_4.jpg", "images/activities/ismar2026_5.jpg"]
     },
     {
       title: "Lab Workshop",
       date: "2026.01.28 – 2026.01.29",
-      location: "Gyeongju",
+      location: "Gyeongju, Korea",
       category: "Workshop",
       details: ["Joined a workshop with lab members and visited media art exhibitions."],
     },
     {
       title: "VRST 2025",
       date: "2025.11.12 – 2025.11.14",
-      location: "Montreal",
+      location: "Montreal, Canada",
       category: "Conference",
       details: ["Presented a paper and connected with researchers from around the world."],
+      photos: ["images/activities/vrst2025_1.jpg", "images/activities/vrst2025_2.jpg", "images/activities/vrst2025_3.jpg", "images/activities/vrst2025_4.jpg"]
     },
     {
       title: "ISMAR 2025",
       date: "2025.10.07 – 2025.10.12",
-      location: "Daejeon",
+      location: "Daejeon, Korea",
       category: "Conference",
       details: ["Presented a TVCG paper.", "Served as a Student Volunteer."],
+      photos: ["images/activities/ismar2025_1.jpg", "images/activities/ismar2025_2.jpg", "images/activities/ismar2025_3.jpg",
+            "images/activities/ismar2025_4.jpg", "images/activities/ismar2025_5.jpg", "images/activities/ismar2025_6.jpg"]
     },
     {
       title: "APMAR 2025",
       date: "2025.09.26 – 2025.09.27",
-      location: "Busan",
+      location: "Busan, Korea",
       category: "Conference",
       details: [
         "Presented research in the \"Pitch Your Work\" session.",
         "Helped organize and run the event hosted by our lab.",
-      ],
+        ],
+        photos: ["images/activities/apmar2025_1.jpg", "images/activities/apmar2025_2.jpg", "images/activities/apmar2025_3.jpg",
+            "images/activities/apmar2025_4.jpg"]
     },
     {
       title: "Visiting Researcher, HXI Lab, University of Calgary",
       date: "2025.05.12 – 2025.08.10",
-      location: "Calgary",
+      location: "Calgary, Canada",
       category: "Research",
       details: [
         "Visiting researcher under Dr. Kangsoo Kim.",
@@ -337,14 +347,14 @@ const content = {
     {
       title: "IEEE VR 2025",
       date: "2025.03.08 – 2025.03.12",
-      location: "Saint-Malo",
+      location: "Saint-Malo, France",
       category: "Conference",
       details: ["Presented a poster and received the Honorable Mention Award for Best Poster."],
     },
     {
       title: "VRST 2022",
       date: "2022.11.29 – 2022.12.01",
-      location: "Tsukuba",
+      location: "Tsukuba, Japan",
       category: "Conference",
       details: ["Presented a poster and received the Best Poster Award."],
     },

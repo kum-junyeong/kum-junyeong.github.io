@@ -143,6 +143,13 @@
           </div>
           ${a.location ? `<div class="activity-loc">${esc(a.location)}</div>` : ""}
           <ul>${(a.details || []).map((d) => `<li>${esc(d)}</li>`).join("")}</ul>
+          ${
+            a.photos?.length
+              ? `<div class="activity-photos">${a.photos
+                  .map((src) => `<a ${ext(src)}><img src="${esc(src)}" alt="${esc(a.title)}" loading="lazy"></a>`)
+                  .join("")}</div>`
+              : ""
+          }
         </div>
       </li>`;
   }

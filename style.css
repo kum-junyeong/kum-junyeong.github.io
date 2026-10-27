@@ -156,6 +156,11 @@ a.study:hover strong { color: var(--accent); }
 .chip { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; color: var(--tag-ink); background: var(--tag-bg); border: 1px solid var(--tag-line); border-radius: 999px; padding: 3px 9px; }
 .activity-loc { font-size: 13px; color: var(--muted); margin-top: 4px; }
 .activity ul { margin: 10px 0 0; padding-left: 18px; color: var(--ink-2); font-size: 15px; line-height: 1.65; }
+.activity-photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; margin-top: 16px; }
+.activity-photos a { display: block; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+.activity-photos img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.activity-photos a:hover img { transform: scale(1.04); }
+.compact .activity-photos { display: none; }
 .compact .activity { grid-template-columns: 1fr; gap: 4px; padding: 18px 0; }
 .compact .activity-head h3 { font-size: 17px; }
 .compact .activity ul { font-size: 14px; margin-top: 6px; }
