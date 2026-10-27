@@ -408,6 +408,9 @@ const content = {
       {
         title: "Service",
         items: [
+          { when: "2026", what: "Reviewer, Virtual Reality (2 manuscripts)", where: "Springer" },
+          { when: "2026", what: "Reviewer, Humanities and Social Sciences Communications (1 manuscript)", where: "Springer Nature" },
+          { when: "2026", what: "Reviewer, Posters (2 submissions)", where: "IEEE ISMAR 2026" },
           { when: "2025", what: "Student Volunteer", where: "IEEE ISMAR 2025" },
           { when: "2025", what: "Organizing Staff", where: "APMAR 2025" },
         ],
