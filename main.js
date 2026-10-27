@@ -109,7 +109,7 @@
   function program(pr, i) {
     const studies = (pr.publications || []).map((id) => pubById[id]).filter(Boolean);
     return `
-      <article class="program ${i % 2 ? "reverse" : ""}" id="project-${i + 1}">
+      <article class="program" id="project-${i + 1}">
         <div class="program-visual">
           <div class="program-image">${figure(pr.image, pr.title, "large")}</div>
           <div class="program-info">
@@ -132,24 +132,38 @@
       </article>`;
   }
 
-  function activityItem(a) {
+  function carousel(photos, alt) {
+    const many = photos.length > 1;
     return `
-      <li class="activity">
-        <div class="activity-date">${esc(a.date)}</div>
+      <div class="carousel">
+        <div class="carousel-track">${photos
+          .map((src) => `<a class="carousel-slide" ${ext(src)}><img src="${esc(src)}" alt="${esc(alt)}" loading="lazy"></a>`)
+          .join("")}</div>
+        ${
+          many
+            ? `<button class="carousel-btn prev" aria-label="Previous photo">‹</button>
+               <button class="carousel-btn next" aria-label="Next photo">›</button>
+               <div class="carousel-dots">${photos
+                 .map((_, i) => `<button aria-label="Photo ${i + 1}"${i ? "" : ' class="active"'}></button>`)
+                 .join("")}</div>`
+            : ""
+        }
+      </div>`;
+  }
+
+  function activityItem(a) {
+    const photos = a.photos?.length ? a.photos : null;
+    return `
+      <li class="activity${photos ? " has-photos" : ""}">
+        ${photos ? carousel(photos, a.title) : ""}
         <div class="activity-body">
           <div class="activity-head">
             <h3>${a.link ? `<a ${ext(a.link)}>${esc(a.title)}</a>` : esc(a.title)}</h3>
             ${a.category ? `<span class="chip">${esc(a.category)}</span>` : ""}
           </div>
           ${a.location ? `<div class="activity-loc">${esc(a.location)}</div>` : ""}
+          <div class="activity-date">${esc(a.date)}</div>
           <ul>${(a.details || []).map((d) => `<li>${esc(d)}</li>`).join("")}</ul>
-          ${
-            a.photos?.length
-              ? `<div class="activity-photos">${a.photos
-                  .map((src) => `<a ${ext(src)}><img src="${esc(src)}" alt="${esc(a.title)}" loading="lazy"></a>`)
-                  .join("")}</div>`
-              : ""
-          }
         </div>
       </li>`;
   }
@@ -327,6 +341,19 @@
       clearTimeout(el._t);
       el._t = setTimeout(() => (el.textContent = el.dataset.label), 1500);
     });
+  });
+
+  // Activities 사진 캐러셀: 좌우 버튼, 점 표시, 스와이프
+  document.querySelectorAll(".carousel").forEach((el) => {
+    const track = el.querySelector(".carousel-track");
+    const dots = [...el.querySelectorAll(".carousel-dots button")];
+    if (!dots.length) return;
+    const current = () => Math.round(track.scrollLeft / track.clientWidth);
+    const go = (i) => track.scrollTo({ left: ((i + dots.length) % dots.length) * track.clientWidth, behavior: "smooth" });
+    el.querySelector(".prev").addEventListener("click", () => go(current() - 1));
+    el.querySelector(".next").addEventListener("click", () => go(current() + 1));
+    dots.forEach((d, i) => d.addEventListener("click", () => go(i)));
+    track.addEventListener("scroll", () => dots.forEach((d, i) => d.classList.toggle("active", i === current())), { passive: true });
   });
 
   // projects.html#project-3 처럼 들어온 경우 해당 위치로 이동
