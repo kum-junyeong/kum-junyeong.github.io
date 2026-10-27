@@ -41,7 +41,7 @@
     return `
       <header class="nav">
         <div class="nav-inner">
-          <a class="brand" href="index.html">${esc(c.profile.name)}<small>${esc(c.profile.nameLocal)}</small></a>
+          <a class="brand" href="index.html">${esc(c.profile.name)}</a>
           <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
           <nav class="nav-links">${links}</nav>
         </div>
