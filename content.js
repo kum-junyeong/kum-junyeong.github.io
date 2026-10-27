@@ -295,7 +295,7 @@ const content = {
       location: "Bari, Italy",
       category: "Conference",
       details: ["Presented a TVCG paper."],
-      photos: ["images/activities/ismar2026_2.jpg", "images/activities/ismar2026_3.jpg",
+      photos: ["images/activities/ismar2026_1.jpg", "images/activities/ismar2026_2.jpg", "images/activities/ismar2026_3.jpg",
               "images/activities/ismar2026_4.jpg", "images/activities/ismar2026_5.jpg"]
     },
     {
