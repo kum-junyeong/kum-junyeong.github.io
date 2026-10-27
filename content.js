@@ -57,7 +57,7 @@ const content = {
       team: "Junyeong Kum (PNU), Bogyeong Seo (CNU), Seungwon Kim (CNU), Myungho Lee (PNU)",
       image: "images/publications/pedestrianvisualization.png",
       tags: ["Virtual Reality", "VR–Non-VR Interaction", "Awareness", "Interruptions"],
-      publications: ["tvcg26", "ismar26"],
+      publications: ["tvcg26"],
     },
     {
       title: "Agent Locomotion",
@@ -196,15 +196,6 @@ const content = {
     },
 
     // Conference Proceedings
-    {
-      id: "ismar26", type: "conference", year: 2026,
-      authors: "J. Kum, B. Seo, S. Kim, and M. Lee",
-      title: "Not All Pedestrians Are the Same: Effects of Real-World Pedestrian Visualization on Intent Recognition and Task Distraction",
-      venue: "IEEE International Symposium on Mixed and Augmented Reality (ISMAR)",
-      short: "ISMAR 2026",
-      link: "", // DOI 나오면 추가
-      image: "",
-    },
     {
       id: "vrst25", type: "conference", year: 2025, selected: true,
       authors: "J. Kum, S. Jung, H. Nam, K. Kim, and M. Lee",
