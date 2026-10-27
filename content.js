@@ -46,6 +46,20 @@ const content = {
 
   projects: [
     {
+      title: "Agent Identification",
+      period: "2026.05 –",
+      theme: "Under review · IEEE VR 2027",
+      question: "Which features must stay the same for a virtual human to still feel like the same person?",
+      description:
+        "We conducted a user study with 20 participants manipulating five identity-related features " +
+        "(face, body type, voice, outfit, and hairstyle) across personal, social, and public distances, " +
+        "and examined which cues make two virtual humans perceived as the same individual.",
+      team: "Junyeong Kum (PNU), Myungho Lee (PNU)",
+      image: "images/publications/agentidentification.png",
+      tags: ["Virtual Humans", "Identity Perception", "Identity Features", "Interpersonal Distance"],
+      publications: [],
+    },
+    {
       title: "Pedestrian Visualization",
       period: "2025.12 – 2026.03",
       theme: "TVCG 2026 · Situational awareness",
