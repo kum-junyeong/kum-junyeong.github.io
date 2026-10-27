@@ -173,6 +173,24 @@ const content = {
       image: "",
     },
     {
+      id: "tvcg26-locomotion", type: "journal", year: 2026,
+      authors: "O. A. Khan, J. Kum, H. Nam, M. Lee, and K. Kim",
+      title: "Influence of Avatar Appearance and Target Distance on Locomotion Method Selection in Virtual Reality",
+      venue: "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+      short: "TVCG 2026",
+      link: "https://doi.org/10.1109/TVCG.2026.3679092",
+      image: "",
+    },
+    {
+      id: "jh26", type: "journal", year: 2026,
+      authors: "H. Choi, M. Kim, B. Kim, J. Kum, H. Lee, M. Lee, and S. J. Noh",
+      title: "High-resolution urban flood risk mapping using indicator cokriging integrated with physical modelling and observational data",
+      venue: "Journal of Hydroinformatics, vol. 28",
+      short: "J. Hydroinformatics 2026",
+      link: "https://doi.org/10.2166/hydro.2025.078",
+      image: "",
+    },
+    {
       id: "tvcg25", type: "journal", year: 2025, selected: true,
       authors: "J. Kum, S. Kim, and M. Lee",
       title: "Entering Your Space: How Agent Entrance Styles Shape Social Presence in AR",
@@ -211,6 +229,15 @@ const content = {
 
     // Conference Proceedings
     {
+      id: "ieeevr26", type: "conference", year: 2026,
+      authors: "G. Woodhouse, D. Kim, T. Kim, J. Kum, D. Han, M. Lee, and I. Cho",
+      title: "Behavioral Cues for Trust in AI-Driven Virtual Agents",
+      venue: "2026 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (IEEE VR)",
+      short: "IEEE VR 2026",
+      link: "", // DOI 나오면 추가
+      image: "",
+    },
+    {
       id: "vrst25", type: "conference", year: 2025, selected: true,
       authors: "J. Kum, S. Jung, H. Nam, K. Kim, and M. Lee",
       title: "Joining the Circle: Human Entry Behavior in a Mixed Reality F-Formation with Agent, Avatar, and Human Partners",
@@ -236,6 +263,24 @@ const content = {
       short: "IEEE VR 2025",
       link: "https://ieeexplore.ieee.org/document/10972767",
       award: "Honorable Mention, Best Poster",
+      image: "",
+    },
+    {
+      id: "egu25", type: "conference", year: 2025,
+      authors: "M. Kim, H. Choi, B. Kim, Y. Lee, H. Lee, J. Kum, M. Lee, and S. J. Noh",
+      title: "Integrating Citizen Data in Urban Flood Risk Modeling: Insights from synthetic experiments",
+      venue: "EGU General Assembly 2025 (EGU25-8244)",
+      short: "EGU 2025",
+      link: "https://doi.org/10.5194/egusphere-egu25-8244",
+      image: "",
+    },
+    {
+      id: "agu24", type: "conference", year: 2024,
+      authors: "S. J. Noh, H. Choi, M. Kim, B. Kim, Y. Lee, H. Lee, J. Kum, and M. Lee",
+      title: "Integration of urban flood risk information using high-resolution modeling and citizen observations: synthetic experiment on an open platform",
+      venue: "AGU Fall Meeting 2024 (H33J-1058)",
+      short: "AGU 2024",
+      link: "",
       image: "",
     },
     {
