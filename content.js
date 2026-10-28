@@ -372,6 +372,7 @@ const content = {
       location: "Gyeongju, Korea",
       category: "Workshop",
       details: ["Joined a workshop with lab members and visited media art exhibitions."],
+      photos: ["images/activities/workshop_1.jpg", "images/activities/workshop_2.jpg", "images/activities/workshop_3.jpg"],
     },
     {
       title: "VRST 2025",
