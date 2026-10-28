@@ -420,7 +420,7 @@ const content = {
       location: "Saint-Malo, France",
       category: "Conference",
       details: ["Presented a poster and received the Honorable Mention Award for Best Poster."],
-      photos: ["images/activities/vr2025_1.jpg", "images/activities/vr2025_2.jpg"],
+        photos: ["images/activities/vr2025_1.jpg", "images/activities/vr2025_2.jpg", "images/activities/vr2025_3.jpg"],
     },
     {
       title: "M.S. Graduation",
@@ -439,7 +439,7 @@ const content = {
       location: "Tsukuba, Japan",
       category: "Conference",
       details: ["Presented a poster and received the Best Poster Award."],
-      photos: ["images/activities/vrst2022_1.jpg", "images/activities/vrst2022_2.jpg"],
+        photos: ["images/activities/vrst2022_1.jpg", "images/activities/vrst2022_2.jpg", "images/activities/vrst2022_3.jpg"],
     },
   ],
 
