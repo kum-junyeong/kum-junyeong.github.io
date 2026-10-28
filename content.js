@@ -442,6 +442,17 @@ const content = {
         ],
       },
       {
+        title: "Teaching Experience",
+        items: [
+          { when: "2026 Fall", what: "Teaching Assistant, Virtual Reality (Graduate)", where: "Pusan National University" },
+          { when: "2026 Spring", what: "Teaching Assistant, Introduction to Virtual Reality (Undergraduate)", where: "Pusan National University · Including Unity lab sessions" },
+          { when: "2025 Fall", what: "Teaching Assistant, Artificial Intelligence Seminar (Undergraduate)", where: "Pusan National University" },
+          { when: "2023 Fall", what: "Teaching Assistant, Virtual Reality (Graduate)", where: "Pusan National University · Including Unity lab sessions" },
+          { when: "2022 Spring", what: "Teaching Assistant, Introduction to Data Science (Undergraduate)", where: "Pusan National University" },
+          { when: "2021 Spring", what: "Teaching Assistant, Introduction to Data Science (Undergraduate)", where: "Pusan National University" },
+        ],
+      },
+      {
         title: "Honors & Awards",
         items: [
           { when: "2025", what: "BK21 International Conference Presentation Travel Grant (ACM VRST 2025)", where: "Pusan National University" },
