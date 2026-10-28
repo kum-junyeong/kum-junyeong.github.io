@@ -411,6 +411,7 @@ const content = {
         "Visiting researcher under Dr. Kangsoo Kim.",
         "Collaborated on XR and HCI projects, and planned and conducted user studies.",
       ],
+      photos: ["images/activities/calgary_1.jpg", "images/activities/calgary_2.jpg"],
     },
     {
       title: "IEEE VR 2025",
@@ -418,6 +419,18 @@ const content = {
       location: "Saint-Malo, France",
       category: "Conference",
       details: ["Presented a poster and received the Honorable Mention Award for Best Poster."],
+      photos: ["images/activities/vr2025_1.jpg", "images/activities/vr2025_2.jpg"],
+    },
+    {
+      title: "M.S. Graduation",
+      date: "2023.02",
+      location: "Busan, Korea",
+      category: "Education",
+      details: [
+        "Received an M.S. in Information Convergence Engineering (Major in Artificial Intelligence) from Pusan National University.",
+        "Thanks to my advisor and colleagues for all their support!",
+      ],
+      photos: ["images/activities/graduate.jpg"],
     },
     {
       title: "VRST 2022",
@@ -425,6 +438,7 @@ const content = {
       location: "Tsukuba, Japan",
       category: "Conference",
       details: ["Presented a poster and received the Best Poster Award."],
+      photos: ["images/activities/vrst2022_1.jpg", "images/activities/vrst2022_2.jpg"],
     },
   ],
 
