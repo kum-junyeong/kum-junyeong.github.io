@@ -108,6 +108,8 @@ h1, h2, h3 { text-wrap: balance; }
 .program:last-child { border-bottom: 1px solid var(--line); }
 .program-visual { position: sticky; top: 110px; }
 .program-image { background: #f4f7f3; border: 1px solid #e0e6de; border-radius: 16px; overflow: hidden; min-height: 400px; display: flex; align-items: center; justify-content: center; padding: 22px; }
+button.program-image { width: 100%; font: inherit; cursor: zoom-in; transition: border-color .2s; }
+button.program-image:hover { border-color: var(--sage-3); }
 .program-image img { width: 100%; max-height: 450px; object-fit: contain; border-radius: 9px; }
 .program-image .placeholder { min-height: 356px; border-radius: 9px; }
 .program-info { padding: 12px 2px 0; }
@@ -126,6 +128,18 @@ a.study:hover .study-image { border-color: var(--sage-3); }
 a.study:hover strong { color: var(--accent); }
 .study strong { display: block; font-size: 12px; line-height: 1.32; color: #171a16; margin-bottom: 4px; }
 .study small { display: block; font-size: 10px; line-height: 1.35; color: #7c8479; }
+
+/* ---------- project modal ---------- */
+.modal { width: min(880px, calc(100% - 32px)); max-height: calc(100% - 48px); padding: 0; border: 0; border-radius: 18px; background: #fff; color: var(--ink); box-shadow: 0 24px 64px rgba(0, 0, 0, .3); overflow: auto; }
+.modal::backdrop { background: rgba(17, 26, 15, .6); }
+.modal-close { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; border: 0; border-radius: 50%; background: rgba(255, 255, 255, .9); color: var(--ink); font-size: 24px; line-height: 1; padding: 0 0 3px; cursor: pointer; box-shadow: 0 2px 8px rgba(0, 0, 0, .2); }
+.modal-image { background: #f4f7f3; padding: 28px; display: flex; justify-content: center; }
+.modal-image img { width: 100%; max-height: 60vh; object-fit: contain; border-radius: 9px; }
+.modal-image .placeholder { min-height: 300px; }
+.modal-body { padding: 28px 32px 34px; }
+.modal-body h2 { font-size: 30px; line-height: 1.1; letter-spacing: -.035em; margin: 0 0 22px; }
+.modal-label { font-size: 10px; text-transform: uppercase; letter-spacing: .14em; font-weight: 800; color: #7f9479; margin-bottom: 8px; }
+.modal-body p { font-size: 15px; line-height: 1.72; color: var(--ink-2); margin: 0; }
 
 /* ---------- publications ---------- */
 .pub-group + .pub-group { margin-top: 72px; }

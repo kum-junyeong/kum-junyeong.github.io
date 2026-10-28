@@ -111,7 +111,7 @@
     return `
       <article class="program" id="project-${i + 1}">
         <div class="program-visual">
-          <div class="program-image">${figure(pr.image, pr.title, "large")}</div>
+          <button class="program-image" data-project="${i}" aria-label="View ${esc(pr.title)} details">${figure(pr.image, pr.title, "large")}</button>
           <div class="program-info">
             <strong>${esc(pr.period)}</strong>
             <small>${esc(pr.team)}</small>
@@ -256,7 +256,8 @@
             <p>${esc(c.projectsIntro.text)}</p>
           </div>
         </section>
-        <section class="programs"><div class="wrap">${c.projects.map(program).join("")}</div></section>`;
+        <section class="programs"><div class="wrap">${c.projects.map(program).join("")}</div></section>
+        <dialog class="modal" aria-label="Project details"></dialog>`;
     },
 
     publications() {
@@ -355,6 +356,29 @@
     dots.forEach((d, i) => d.addEventListener("click", () => go(i)));
     track.addEventListener("scroll", () => dots.forEach((d, i) => d.classList.toggle("active", i === current())), { passive: true });
   });
+
+  // Projects 그림 클릭 시 큰 사진과 abstract를 팝업으로 표시
+  const modal = document.querySelector(".modal");
+  if (modal) {
+    document.querySelectorAll("[data-project]").forEach((el) => {
+      el.addEventListener("click", () => {
+        const pr = c.projects[el.dataset.project];
+        modal.innerHTML = `
+          <button class="modal-close" aria-label="Close">×</button>
+          <div class="modal-image">${figure(pr.image, pr.title, "large")}</div>
+          <div class="modal-body">
+            <div class="program-number">${esc(pr.theme)}</div>
+            <h2>${esc(pr.title)}</h2>
+            <div class="modal-label">Abstract</div>
+            <p>${esc(pr.abstract || pr.description)}</p>
+          </div>`;
+        modal.querySelector(".modal-close").addEventListener("click", () => modal.close());
+        modal.showModal();
+      });
+    });
+    // 바깥(배경) 클릭 시 닫기
+    modal.addEventListener("click", (e) => e.target === modal && modal.close());
+  }
 
   // projects.html#project-3 처럼 들어온 경우 해당 위치로 이동
   if (location.hash) document.querySelector(location.hash)?.scrollIntoView();
