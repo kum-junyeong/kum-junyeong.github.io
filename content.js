@@ -98,7 +98,7 @@ const content = {
       description:
         "We examine participants' entry behavior as they join a circular F-formation composed of " +
         "three distinct entities: an agent, an avatar, and a real human.",
-      abstract: "",
+          abstract: "According to Hall’s theory, the space individuals maintain between one another depends on relational closeness and situational context. Prior research suggests that interpersonal distance(IPD) varies not only between virtual and real humans, but also among virtual humans depending on their perceived agency.However, little is known about how people spatially negotiate entry into mixed groups comprising different types of agents in extended reality(XR) settings. In this study, we examine participants’ entry behavior as they join a circular F- formation composed of three distinct entities: an agent, an avatar, and a real human.Specifically, we investigate how participants position themselves relative to each entity, analyzing their preferences and behaviors in terms of IPD and entry dynamics.Our findings reveal that participants maintained the greatest IPD from the real human, followed by the avatar and the agent, suggesting nuanced social distinctions among these three entities.Furthermore, when the real human was absent, participants tended to maintain a greater distance from the avatar compared to the agent.These results offer valuable insights for the design of XR collaboration environments and for understanding social dynamics in multi- agent interactions.",
       team: "Junyeong Kum (PNU), Sunghun Jung (PNU), Hyeongil Nam (UofC), Kangsoo Kim (UofC), Myungho Lee (PNU)",
         image: "images/publications/formation.png",
       tags: ["F-formation", "Proxemics", "Mixed Reality", "Social Interaction"],
@@ -463,6 +463,7 @@ const content = {
         title: "Research Experience",
         items: [
           { when: "2025.05 – 2025.08", what: "Visiting Researcher, HXI Lab (Dr. Kangsoo Kim)", where: "University of Calgary, Canada" },
+          { when: "2021.04 – 2021.07", what: "Participant, GAN-based Synthesis Challenge", where: "DeepBrain AI" },
         ],
       },
       {
@@ -481,8 +482,10 @@ const content = {
         items: [
           { when: "2025", what: "BK21 International Conference Presentation Travel Grant (ACM VRST 2025)", where: "Pusan National University" },
           { when: "2025", what: "Honorable Mention, Best Poster", where: "IEEE VR 2025" },
+          { when: "2024", what: "Grand Prize, Outstanding Research Award for Graduate Students", where: "BK21 Four Program, Pusan National University" },
           { when: "2024", what: "Mitacs Globalink Research Award", where: "Mitacs, Canada · University of Calgary (Host: Dr. Kangsoo Kim)" },
           { when: "2022", what: "Best Poster Award", where: "ACM VRST 2022" },
+          { when: "2020", what: "1st Place Award, Advanced Major Undergraduate Research Competition – Startup Track", where: "Pusan National University" },
         ],
       },
       {
