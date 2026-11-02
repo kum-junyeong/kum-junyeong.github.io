@@ -178,7 +178,7 @@ const content = {
       title: "Not All Pedestrians Are the Same: Effects of Real-World Pedestrian Visualization on Intent Recognition and Task Distraction",
       venue: "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
       short: "TVCG 2026",
-      link: "", // DOI 나오면 추가
+          link: "https://doi.org/10.1109/TVCG.2026.3747466", // DOI 나오면 추가
       image: "",
     },
     {
@@ -243,7 +243,7 @@ const content = {
       title: "Behavioral Cues for Trust in AI-Driven Virtual Agents",
       venue: "2026 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (IEEE VR)",
       short: "IEEE VR 2026",
-      link: "", // DOI 나오면 추가
+        link: "https://doi.org/10.1109/VRW70859.2026.00211", // DOI 나오면 추가
       image: "",
     },
     {
@@ -289,7 +289,7 @@ const content = {
       title: "Integration of urban flood risk information using high-resolution modeling and citizen observations: synthetic experiment on an open platform",
       venue: "AGU Fall Meeting 2024 (H33J-1058)",
       short: "AGU 2024",
-      link: "",
+        link: "https://ui.adsabs.harvard.edu/abs/2024AGUFMH33J.1058N/abstract",
       image: "",
     },
     {
