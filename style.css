@@ -246,3 +246,7 @@ a.study:hover strong { color: var(--accent); }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: 6px; }
 }
+
+/* Publication links appear vertically, with the video below the paper. */
+.pub-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.split .pub-actions { display: none; }

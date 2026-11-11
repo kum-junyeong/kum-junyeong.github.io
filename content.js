@@ -63,6 +63,7 @@ const content = {
     },
     {
       title: "Pedestrian Visualization",
+      youtube: "https://youtu.be/AsKNzQ8mHZs?si=IHwQkzYsulhDG_wv",
       period: "2025.12 – 2026.03",
       theme: "TVCG 2026 · Situational awareness",
       question: "How should real-world pedestrians appear to someone immersed in VR?",
@@ -106,6 +107,7 @@ const content = {
     },
     {
       title: "Agent Entrance",
+      youtube: "https://youtu.be/UqpuRf-KJKY?si=wuobg91OOc3j57s_",
       period: "2024.03 – 2025.03",
       theme: "TVCG 2025 · Social presence",
       question: "How should an embodied conversational agent enter your space in AR?",
@@ -173,6 +175,7 @@ const content = {
   publications: [
     // Journal Articles
     {
+      youtube: "https://youtu.be/AsKNzQ8mHZs?si=IHwQkzYsulhDG_wv",
       id: "tvcg26", type: "journal", year: 2026, selected: true,
       authors: "J. Kum, B. Seo, S. Kim, and M. Lee",
       title: "Not All Pedestrians Are the Same: Effects of Real-World Pedestrian Visualization on Intent Recognition and Task Distraction",
@@ -200,6 +203,7 @@ const content = {
       image: "",
     },
     {
+      youtube: "https://youtu.be/UqpuRf-KJKY?si=wuobg91OOc3j57s_",
       id: "tvcg25", type: "journal", year: 2025, selected: true,
       authors: "J. Kum, S. Kim, and M. Lee",
       title: "Entering Your Space: How Agent Entrance Styles Shape Social Presence in AR",
@@ -265,6 +269,7 @@ const content = {
       image: "",
     },
     {
+      youtube: "https://youtu.be/UqpuRf-KJKY?si=wuobg91OOc3j57s_",
       id: "ieeevr25", type: "conference", year: 2025, selected: true,
       authors: "J. Kum and M. Lee",
       title: "How Embodied Conversational Agents Should Enter Your Space?",

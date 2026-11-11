@@ -93,7 +93,7 @@
           <div class="pub-venue">${esc(p.venue)}</div>
           ${p.award ? `<span class="award">🏆 ${esc(p.award)}</span>` : ""}
         </div>
-        ${p.link ? `<a class="pub-link" ${ext(p.link)}>Paper ↗</a>` : ""}
+        ${p.link || p.youtube ? `<div class="pub-actions">${p.link ? `<a class="pub-link" ${ext(p.link)}>Paper ↗</a>` : ""}${p.youtube ? `<a class="pub-link" ${ext(p.youtube)}>YouTube ↗</a>` : ""}</div>` : ""}
       </li>`;
   }
 
@@ -122,6 +122,7 @@
           <h2>${esc(pr.title)}</h2>
           <h3>${esc(pr.question)}</h3>
           <p>${esc(pr.description)}</p>
+          ${pr.youtube ? `<div class="hero-links"><a class="btn" ${ext(pr.youtube)}>YouTube ↗</a></div>` : ""}
           <div class="tags">${(pr.tags || []).map((t) => `<span>${esc(t)}</span>`).join("")}</div>
           ${
             studies.length
@@ -371,6 +372,7 @@
             <h2>${esc(pr.title)}</h2>
             <div class="modal-label">Abstract</div>
             <p>${esc(pr.abstract || pr.description)}</p>
+            ${pr.youtube ? `<div class="hero-links"><a class="btn" ${ext(pr.youtube)}>YouTube ↗</a></div>` : ""}
           </div>`;
         modal.querySelector(".modal-close").addEventListener("click", () => modal.close());
         modal.showModal();
