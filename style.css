@@ -248,5 +248,10 @@ a.study:hover strong { color: var(--accent); }
 }
 
 /* Publication links appear vertically, with the video below the paper. */
-.pub-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.pub-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.pub-actions .pub-link { align-self: flex-end; text-align: right; }
 .split .pub-actions { display: none; }
+
+.project-video { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; vertical-align: middle; border: 1px solid var(--tag-line); border-radius: 50%; font-size: 14px; line-height: 1; letter-spacing: 0; color: var(--accent); }
+.project-video:hover { background: var(--tag-bg); }
+.project-video:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }

@@ -119,10 +119,9 @@
         </div>
         <div class="program-copy">
           <div class="program-number">${pad(i + 1)} · ${esc(pr.theme)}</div>
-          <h2>${esc(pr.title)}</h2>
+          <h2 class="project-title">${esc(pr.title)}${pr.youtube ? ` <a class="project-video" ${ext(pr.youtube)} aria-label="Watch ${esc(pr.title)} on YouTube" title="Watch on YouTube">↗</a>` : ""}</h2>
           <h3>${esc(pr.question)}</h3>
           <p>${esc(pr.description)}</p>
-          ${pr.youtube ? `<div class="hero-links"><a class="btn" ${ext(pr.youtube)}>YouTube ↗</a></div>` : ""}
           <div class="tags">${(pr.tags || []).map((t) => `<span>${esc(t)}</span>`).join("")}</div>
           ${
             studies.length
@@ -369,10 +368,9 @@
           <div class="modal-image">${figure(pr.image, pr.title, "large")}</div>
           <div class="modal-body">
             <div class="program-number">${esc(pr.theme)}</div>
-            <h2>${esc(pr.title)}</h2>
+            <h2 class="project-title">${esc(pr.title)}${pr.youtube ? ` <a class="project-video" ${ext(pr.youtube)} aria-label="Watch ${esc(pr.title)} on YouTube" title="Watch on YouTube">↗</a>` : ""}</h2>
             <div class="modal-label">Abstract</div>
             <p>${esc(pr.abstract || pr.description)}</p>
-            ${pr.youtube ? `<div class="hero-links"><a class="btn" ${ext(pr.youtube)}>YouTube ↗</a></div>` : ""}
           </div>`;
         modal.querySelector(".modal-close").addEventListener("click", () => modal.close());
         modal.showModal();
